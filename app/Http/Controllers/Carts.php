@@ -44,10 +44,12 @@ class Carts extends Controller
     	foreach (Session::get('cart') as $cart) {
     		$detail_pesan = new Detail_Cart();
     		$detail_pesan->id_pesan = $id_pesan;
-    		$detail_pesan->id_kantin = $cart['menu']->id_kantin;
+            $id_kantin = $cart['menu']->id_kantin;
+    		$detail_pesan->id_kantin = $id_kantin;
             $id_pembeli = Session::get('pembeli')->id_pembeli;
     		$detail_pesan->id_pembeli = $id_pembeli;
-    		$detail_pesan->id_menu = $cart["menu"]->id_menu;
+            $id_menu = $cart["menu"]->id_menu;
+    		$detail_pesan->id_menu = $id_menu;
     		$detail_pesan->jumlah = $cart["jumlah"];
     		$detail_pesan->harga = $cart["menu"]->harga;
             $total_harga = $cart['menu']->harga*$cart["jumlah"];
@@ -57,11 +59,15 @@ class Carts extends Controller
             $pembeli->saldo = $pembeli->saldo-$total_harga;
             $pembeli->save();
 
+            $menu = Menu::where('id_menu', $id_menu)->first();
+
+            $kantin = Kantin::where('id_kantin', $id_kantin)->first();
+            $kantin->saldo = $kantin->saldo+($cart['menu']->harga*$cart["jumlah"]);
+            $kantin->save();
+
             $detail_pesan->tanggal_beli = date('Y-m-d');
     		$detail_pesan->save();
     	}
-
-    	
     	// echo $pesan;
     	Session::put('cart',[]);
     	return redirect('/page_kantin');

@@ -126,7 +126,7 @@
     </div>
     <hr>
     <div class="card-body">
-      <span><img src="{{ url('storage/fotoMenu/'.$menu->image) }}" width="150" class="image" style="margin-left: 15px; margin-top: -15px; margin-bottom: 15px;"></span>
+      <span><img src="{{ url('storage/fotoMenu/'.$menu->image) }}" width="150" class="image" style="margin-left: 40px; margin-right: 40px; margin-top: -15px; margin-bottom: 5px;"></span>
             <hr>
             <p>ID Menu : {{ $menu->id_menu }}</p>
             <p>Deskripsi : <br>{{ $menu->deskripsi }}</p>
