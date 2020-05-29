@@ -3,7 +3,7 @@
 <div class="container-fluid">
 		<!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-0">
-            <a href="{{ url('/kantin') }}" class="h1 mt-1 mb-0 text-danger">Kantin</a>
+            <a href="{{ url('/kantin') }}" class="h1 mt-1 mb-0 text-danger">Store</a>
           </div>
 <form action="{{ url('kantin/search') }}" method="post" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style="float: right;">
 	{{ csrf_field() }}
@@ -42,7 +42,7 @@
 			<br>
 			<br>
 			<button type="button" class="btn btn-info col-md-12" data-toggle="modal" data-target="#modal2" onclick='Detail({!! json_encode($kantin) !!})'>
-					Detail Kantin
+					Detail
 			</button>
  		</div>
  		<div class="card-footer">

@@ -3,7 +3,7 @@
 <div class="container-fluid">
 		<!-- Page Heading -->
           <div class="d-sm-flex mb-0">
-            <a href="{{ url('/kantin') }}" class="h1 mt-1 mb-0 text-danger">Kantin</a><span style="padding-left: 10px; padding-right: 10px;" class="ft-chevron-right h1 mt-1 mb-0 text-danger"></span><a href="#" class="h1 mt-1 mb-0 text-danger">Menu</a>
+            <a href="{{ url('/kantin') }}" class="h1 mt-1 mb-0 text-danger">Store</a><span style="padding-left: 10px; padding-right: 10px;" class="ft-chevron-right h1 mt-1 mb-0 text-danger"></span><a href="#" class="h1 mt-1 mb-0 text-danger">Menu</a>
           </div>
 <form action="{{ url('menu/search') }}" method="post" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style="float: right;">
 	{{ csrf_field() }}

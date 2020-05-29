@@ -38,12 +38,12 @@
       <div class="container">
         <a class="navbar-brand" href="{{ url('/page_beranda_pembeli') }}">Tumbas.ne</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span>
         </button>
         <?php if (Session::has('pembeli')): ?>
           <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link"></a></li>
             <li class="nav-item active"><a href="{{ url('/page_kantin') }}" class="nav-link">Kantin</a></li>
             <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Session::get('pembeli')->nama }}</a>
               <div class="dropdown-menu">
@@ -59,7 +59,7 @@
         <?php else: ?>
           <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Home</a></li>
             <li class="nav-item active"><a href="{{ url('/page_kantin') }}" class="nav-link">Kantin</a></li>
             <li class="nav-item"><a href="{{ url('/login_pembeli') }}" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="{{ url('/cart_pembeli') }}" class="nav-link"><i class="la la-shopping-cart" style="font-size: 30px; margin-top: -10px;"></i></a></li>
@@ -72,7 +72,7 @@
     <!-- END nav -->
 
 
-<div class="hero-wrap ftco-degree-bg header" style="background-image: url('{{ url('theme-assets/bg-2.jpg') }}');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap ftco-degree-bg header" style="background-image: url('{{ url('theme-assets/smktelkom.jpg') }}');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-center align-items-center">
@@ -80,7 +80,7 @@
           	<p class="breadcrumbs">
                 <span class="mr-2">
                     <a href="{{ url('/page_beranda_pembeli') }}" class="text-white">
-                        Beranda
+                        Home
                     <i style="margin-left: 10px;" class="ion-ios-arrow-forward text-white"></i>
                     </a>
                 </span>
@@ -90,8 +90,8 @@
                     <i style="margin-left: 10px;" class="ion-ios-arrow-forward text-white"></i>
                     </a>
                 </span>
-                <span class="text-white">Menu</span></p>
-            <h1 class="mb-3 bread text-white">Daftar Menu</h1>
+                <span class="text-white">Collection</span></p>
+            <h1 class="mb-3 bread text-white">Collection</h1>
             <form action="{{ url('page_kantin/search') }}" method="post"class="search-location mt-md-5">
             	{{ csrf_field() }}
 		        		<div class="row justify-content-center">
@@ -114,8 +114,8 @@
       <div class="container">
       	<div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-          	<span class="subheading">Daftar Menu</span>
-            <h2 class="mb-2">Banyak juga pilihan menu nya..</h2>
+          	<span class="subheading">Daftar</span>
+            <h2 class="mb-2"></h2>
           </div>
         </div>
         <div class="row d-flex">

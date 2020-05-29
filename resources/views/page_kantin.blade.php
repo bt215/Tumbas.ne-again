@@ -1,12 +1,12 @@
 @extends('page_pembeli_2')
 @section('content')
-<div class="hero-wrap ftco-degree-bg header" style="background-image: url('{{ url('theme-assets/bg-2.jpg') }}');" data-stellar-background-ratio="0.5">
+<div class="hero-wrap ftco-degree-bg header" style="background-image: url('{{ url('theme-assets/moklet.jpg') }}');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-center align-items-center">
           <div class="col-md-9 ftco-animate pb-5 text-center" style="margin-top: -150px;">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="{{ url('/page_beranda_pembeli') }}" class="text-white">Beranda<i style="margin-left: 10px;" class="ion-ios-arrow-forward text-white"></i></a></span><span class="text-white">Kantin</span></p>
-            <h1 class="mb-3 bread text-white">Daftar Kantin</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="{{ url('/page_beranda_pembeli') }}" class="text-white">Home<i style="margin-left: 10px;" class="ion-ios-arrow-forward text-white"></i></a></span><span class="text-white">Kantin</span></p>
+            <h1 class="mb-3 bread text-white">Kantin</h1>
             <form action="{{ url('page_kantin/search') }}" method="post"class="search-location mt-md-5">
             	{{ csrf_field() }}
 		        		<div class="row justify-content-center">
@@ -29,8 +29,8 @@
       <div class="container">
       	<div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-          	<span class="subheading">Kantin</span>
-            <h2 class="mb-2">Banyak nih pilihan kantin nya</h2>
+          	<span class="subheading">collection</span>
+            <h2 class="mb-2"></h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -45,7 +45,7 @@
  		</div>
  		<div class="card-footer" style="background-color: white;">
  			<a href='{{ url("/page_menu/$kantin->id_kantin") }}'>
-				<button type="button" class="btn btn-success col-sm-12">Menu Makanan</button>
+				<button type="button" class="btn btn-success col-sm-12">See more</button>
 			</a>
  		</div>
 	</div>
@@ -62,9 +62,8 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Tumbas.ne</h2>
-              <p>Sebuah web aplikasi yang dibuat untuk memudahkan warga smk telkom malang memesan makanan di kantin agar tidak lama menunggu dan mengantri panjang.</p>
-              <ul class="ftco-footer-social list-unstyled mt-5">
+            <h2 class="ftco-heading-2">Tumbas.ne</h2>
+                <ul class="ftco-footer-social list-unstyled mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
@@ -73,14 +72,6 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Ada Pertanyaan?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li><span class="icon icon-map-marker"></span><span class="text">SMK Telkom Malang, Sawojajar, Kedungkandang, Malang, Indonesia</span></li>
-                  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 897 1623 160</span></a></li>
-                  <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">tumbas.ne@gmail.com</span></a></li>
-                </ul>
-              </div>
             </div>
           </div>
           <div class="col-md">

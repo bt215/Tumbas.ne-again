@@ -7,7 +7,7 @@
     <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
     <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
-    <title>Kantin - Tumbas.ne</title>
+    <title>Store - Zvezda</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="{{ url('theme-assets/logo.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
@@ -70,8 +70,8 @@
     <div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true" data-img="{{ url('theme-assets/images/backgrounds/05.jpg') }}">
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">       
-          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Chameleon admin logo" src="{{ url('theme-assets/logo.png') }}"/>
-              <h3 class="brand-text">Tumbas.ne</h3></a>
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" alt="Chameleon admin logo" src="{{ url('theme-assets/d.jpg') }}"/>
+              <h3 class="brand-text">Zvezda</h3></a>
             </li>
           <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
         </ul>
@@ -82,7 +82,7 @@
           </li>
           <li class="nav-item"><a href="{{ url('/admin') }}"><i class="ft-user"></i><span class="menu-title">Admin</span></a>
           </li>
-          <li class="nav-item active"><a href="{{ url('/kantin') }}"><i class="ft-shopping-cart"></i><span class="menu-title">Kantin</span></a>
+          <li class="nav-item active"><a href="{{ url('/kantin') }}"><i class="ft-shopping-cart"></i><span class="menu-title">Store</span></a>
           </li>
           <li class="nav-item"><a href="{{ url('/pembeli') }}"><i class="ft-users"></i><span class="menu-title">Pembeli</span></a>
           </li>

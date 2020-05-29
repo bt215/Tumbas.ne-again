@@ -43,7 +43,7 @@
         <?php if (Session::has('pembeli')): ?>
           <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Home</a></li>
             <li class="nav-item active"><a href="{{ url('/page_kantin') }}" class="nav-link">Kantin</a></li>
             <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ Session::get('pembeli')->nama }}</a>
               <div class="dropdown-menu">
@@ -59,7 +59,7 @@
         <?php else: ?>
           <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Beranda</a></li>
+            <li class="nav-item"><a href="{{ url('/page_beranda_pembeli') }}" class="nav-link">Home</a></li>
             <li class="nav-item active"><a href="{{ url('/page_kantin') }}" class="nav-link">Kantin</a></li>
             <li class="nav-item"><a href="{{ url('/login_pembeli') }}" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="{{ url('/cart_pembeli') }}" class="nav-link"><i class="la la-shopping-cart" style="font-size: 30px; margin-top: -10px;"></i></a></li>

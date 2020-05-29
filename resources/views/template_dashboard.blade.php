@@ -71,8 +71,8 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true" data-img="{{ url('theme-assets/images/backgrounds/05.jpg') }}">
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">       
-          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" src="{{ url('theme-assets/logo.png') }}"/>
-              <h3 class="brand-text">Tumbas.ne</h3></a>
+          <li class="nav-item mr-auto"><a class="navbar-brand"><img class="brand-logo" src="{{ url('theme-assets/d.jpg') }}"/>
+              <h3 class="brand-text">Zvezda</h3></a>
             </li>
           <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
         </ul>
@@ -83,7 +83,7 @@
           </li>
           <li class="nav-item"><a href="{{ url('/admin') }}"><i class="ft-user"></i><span class="menu-title">Admin</span></a>
           </li>
-          <li class="nav-item"><a href="{{ url('/kantin') }}"><i class="ft-shopping-cart"></i><span class="menu-title">Kantin</span></a>
+          <li class="nav-item"><a href="{{ url('/kantin') }}"><i class="ft-shopping-cart"></i><span class="menu-title">Store</span></a>
           </li>
           <li class="nav-item"><a href="{{ url('/pembeli') }}"><i class="ft-users"></i><span class="menu-title">Pembeli</span></a>
           </li>

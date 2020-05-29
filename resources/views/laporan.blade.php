@@ -27,10 +27,10 @@
     <table class="table">
       <thead>
         <tr>
-          <th>ID Pesan</th>
-          <th>Nama Pembeli</th>
-          <th>Nama Menu</th>
-          <th>Nama Kantin</th>
+          <th>ID</th>
+          <th>Pembeli</th>
+          <th>Menu</th>
+          <th>Games</th>
           <th>Tanggal Beli</th>
           <th>Opsi</th>
         </tr>
